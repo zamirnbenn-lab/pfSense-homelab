@@ -1,2 +1,47 @@
 # pfSense-homelab
-A homelab built for practicing firewall configuration, NAT, DHCP, DNS, Routing, VLAN Segmentation, AD, Group Policy, Linux Administraton, Network Troubleshooting, Log Anaylsis, etc. 
+
+## Overview
+
+This project is a virtualized networking and security homelab built using
+VMware Workstation and pfSense.
+
+The purpose of the lab is to gain hands-on experience with routing,
+firewall configuration, VLAN segmentation, Windows Active Directory,
+Linux administration, and security monitoring.
+
+## Lab Environment
+
+- VMware Workstation Pro
+- pfSense CE
+- Windows Server 2022
+- Windows 11
+- Ubuntu Server
+- Kali Linux
+- Splunk
+
+## Network Topology
+
+[Insert diagram here]
+
+## Network Addressing
+
+| Device | IP Address | Purpose |
+|---|---|---|
+| pfSense LAN | 192.168.10.1 | Default Gateway |
+| Windows Server | 192.168.10.10 | AD/DNS Server |
+| Ubuntu Server | 192.168.10.20 | Linux Server |
+| Windows 11 | DHCP | Domain Client |
+
+## Skills Demonstrated
+
+- Firewall configuration
+- NAT
+- DHCP
+- DNS
+- Routing
+- VLAN segmentation
+- Active Directory
+- Group Policy
+- Linux administration
+- Network troubleshooting
+- Log analysis
