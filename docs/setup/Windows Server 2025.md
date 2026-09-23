@@ -10,3 +10,17 @@
 - Network Adapter: LAB-LAN 
 
 ![Windows 11 Virtual Machine](../../images/phase1/Windows2025-Server.png)
+
+## Network Configuration
+
+- IP Address: 192.168.10.10
+- Subnet Mask: 255.255.255.0
+- Default Gateway: 192.168.10.1
+
+![Windows Server IP Configuration](../../images/phase1/WinServer25-IpConfig.png)
+
+## Connectivity Verification
+
+The server was able to reach the pfSense gateway, access the Internet, and resolve DNS successfully.
+
+![Windows Server Connectivity Test](../../images/phase1/Win25Server-ConnectivityTest.png)
