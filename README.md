@@ -57,7 +57,7 @@ Phase 1 focused on getting the basic lab network up and running and making sure 
 
 pfSense was configured as both the firewall and router for the homelab.
 
-- WAN: em0 using DHCP through VMware NAT
+- WAN: em0 
 - LAN: em1
 - LAN Subnet: 192.168.10.0/24
 - DHCP Range: 192.168.10.100 - 192.168.10.199
