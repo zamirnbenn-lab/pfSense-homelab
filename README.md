@@ -53,4 +53,5 @@ pfSense was configured as both the firewall and router for this homelab
 - WAN: em0
 - LAN: em1
 - LAN Subnet - 192.168.10.0/24
+
 [View Detailed pfSense Configuration](docs/setup/pfsense-setup)
