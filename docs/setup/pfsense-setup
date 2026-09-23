@@ -19,9 +19,7 @@ After configuring the pfSense WAN and LAN interfaces, I performed connectivity t
 
 ### WAN / Internet Connectivity
 
-I tested external connectivity from pfSense by pinging a public IP address:
-
-`ping 8.8.8.8` 
+I tested external connectivity from pfSense by pinging a public IP address: `ping 8.8.8.8` 
 
 The test was successful:
 
@@ -31,4 +29,30 @@ The test was successful:
 
 This confirmed that the WAN interface was successfully connected to the Internet through VMware NAT.
 
-![pfSense Internet Connectivity Test](
+![pfSense Internet Connectivity Test](images/phase1/ConnectTest.png) 
+
+### LAN Interface Verification
+
+I also tested the pfSense LAN interface by pinging its configured LAN address: `ping 192.168.10.1`
+
+The test was successful:
+
+- 3 packets transmitted
+- 3 packets received
+- 0% packet loss
+
+This confirmed that the LAN interface was active and working correctly. 
+
+![pfSense LAN Interface Test])(
+
+### Current Results
+
+At this stage, the following functionality has been verified:
+
+- pfSense WAN interface received an IP address through DHCP
+- pfSense has working Internet connectivity
+- pfSense LAN interface is configured as 192.168.10.1/24
+- pfSense LAN interface is reachable
+- DHCP is enabled for the LAB-LAN network
+
+
