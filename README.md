@@ -53,34 +53,27 @@ Linux administration, and security monitoring.
 
 ## Phase 1 - Network Foundation
 
-Phase 1 focused on getting the basic lab network up and running and making sure devices could successfully connect through pfSense.
+For Phase 1, I focused on getting the basic network working and making sure the devices in the lab could actually communicate through pfSense.
 
-pfSense was configured as both the firewall and router for the homelab.
+I set up pfSense as the firewall and router for the lab, using VMware NAT for the WAN connection and a separate LAB-LAN segment for the internal network.
 
-- WAN: em0 
+- WAN: em0
 - LAN: em1
 - LAN Subnet: 192.168.10.0/24
 - DHCP Range: 192.168.10.100 - 192.168.10.199
-- LAN Segment: LAB-LAN
 
-I connected a Windows 11 client to the LAB-LAN segment and confirmed that it received an IP address from pfSense through DHCP.
+I connected a Windows 11 VM to the LAB-LAN and confirmed that it received an IP address from pfSense. I also added a Windows Server 2025 VM and gave it the static IP address 192.168.10.10.
 
-I also added a Windows Server 2025 VM and configured it with a static IP address of 192.168.10.10.
+After everything was connected, I tested both Windows machines to make sure they could reach the pfSense gateway, access the Internet, and resolve DNS successfully.
 
-To make sure everything was working correctly, I tested connectivity from both Windows systems. Both machines were able to reach the pfSense gateway, connect to the Internet, and successfully resolve DNS queries.
+### Phase 1 Results
 
-### Phase 1 Completed
-
-- pfSense firewall/router configured
-- WAN connected through VMware NAT
-- Isolated 'LAB-LAN' segment created
-- DHCP configured for client devices
-- Windows 11 client connected successfully
-- Windows Server 2025 configured with a static IP
-- Gateway connectivity verified
-- Internet connectivity verified
-- DNS resolution verified
+- pfSense is working as the lab firewall and router
+- Windows 11 is receiving an IP through DHCP
+- Windows Server 2025 is using a static IP
+- Both systems can reach the pfSense gateway
+- Both systems have Internet access
+- DNS resolution is working
 
 **Phase 1 Status: Complete**
-
 [View Detailed pfSense Configuration](docs/setup/pfSense.md)
