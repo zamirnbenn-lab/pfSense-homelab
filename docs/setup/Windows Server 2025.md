@@ -9,4 +9,4 @@
 - Version : 25H2 or later
 - Network Adapter: LAB-LAN 
 
-![Windows 11 Virtual Machine](../../images/phase1/Windows-VM-Setup.png)
+![Windows 11 Virtual Machine](../../images/phase1/Windows2025-Server.png)
