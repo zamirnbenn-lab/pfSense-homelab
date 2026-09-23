@@ -21,6 +21,6 @@
 
 ## Connectivity Verification
 
-The server was able to reach the pfSense gateway, access the Internet, and resolve DNS successfully.
+The server was able to reach the pfSense gateway, access the Internet, and resolve DNS.
 
 ![Windows Server Connectivity Test](../../images/phase1/Win25Server-ConnectivityTest.png)
