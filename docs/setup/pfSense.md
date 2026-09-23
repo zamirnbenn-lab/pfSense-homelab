@@ -1,11 +1,12 @@
 ## WAN Configuration
 
+- Network Adapter 1: NAT (WAN)
 - Interface: em0
 - WAN IP: 192.168.206.128/24
 - IPv4 Configuration: DHCP
 
 ## LAN Configuration
-
+- Network Adapter 2: LAN Segment - LAB-LAN (LAN)
 - Interface: em1
 - Mode: Static
 - LAN IP: 192.168.10.1/24
