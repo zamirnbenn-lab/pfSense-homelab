@@ -48,7 +48,8 @@ Linux administration, and security monitoring.
 
 ## Documentation
 - [pfSense Setup](docs/setup/pfsense-setup)
-- [Windows Server Setup](docs/setup/window-server-setup) 
+- [Windows 11 Setup](docs/setup/window-server-setup)
+- [Windows Server Setup](docs/setup/windows-server-setup.md)
 
 ## Phase 1 - Network Foundation
 
