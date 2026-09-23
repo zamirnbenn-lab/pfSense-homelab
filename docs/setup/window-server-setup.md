@@ -6,6 +6,7 @@
 - CPU: 2 cores
 - RAM: 4096 MB
 - Storage: 64 GB
+- Version : 25H2 or later
 - Network Adapter: LAB-LAN / Host-only
 
 ![Windows 11 Virtual Machine](../../images/phase1/Windows11-VM-Setup.png)
