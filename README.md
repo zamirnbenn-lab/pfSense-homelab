@@ -19,7 +19,7 @@ Linux administration, and security monitoring.
 - Kali Linux
 - Splunk
 
-## Network Topology
+## Current Network Topology
 
 ![Beginning Network Topology](images/phase1/Starting-Network-Topology.png)
 
