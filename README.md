@@ -47,7 +47,7 @@ Linux administration, and security monitoring.
 - Log analysis
 
 ## Documentation
-- [pfSense Setup](docs/setup/pfsense-setup.md)
+- [pfSense Setup](docs/setup/pfsense-setup)
 - [Windows Server Setup](docs/setup/windows-server-setup.md) 
 
 ## Phase 1 - pfSense Setup
