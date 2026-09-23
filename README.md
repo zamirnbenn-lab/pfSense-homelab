@@ -21,7 +21,7 @@ Linux administration, and security monitoring.
 
 ## Network Topology
 
-[Beginning Network Topology](images/phase1/Starting-Network-Topology.png)
+![Beginning Network Topology](images/phase1/Starting-Network-Topology.png)
 
 ## Network Addressing
 
