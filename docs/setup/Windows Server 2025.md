@@ -5,7 +5,7 @@
 - OS: Windows Server 2025
 - CPU: 2 cores
 - RAM: 2048 MB
-- Storage: 64 GB
+- Storage: 60 GB
 - Version : 25H2 or later
 - Network Adapter: LAB-LAN 
 
