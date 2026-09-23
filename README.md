@@ -66,7 +66,7 @@ I connected a Windows 11 VM to the LAB-LAN and confirmed that it received an IP 
 
 After everything was connected, I tested both Windows machines to make sure they could reach the pfSense gateway, access the Internet, and resolve DNS successfully.
 
-### Phase 1 Results
+### Phase 1 Results:
 
 - pfSense is working as the lab firewall and router
 - Windows 11 is receiving an IP through DHCP
