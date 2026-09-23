@@ -2,7 +2,7 @@
 
 - Interface: em0
 - WAN IP: 192.168.206.128/24
-- IPv4 Configuration: Enabled 
+- IPv4 Configuration: DHCP
 
 ## LAN Configuration
 
