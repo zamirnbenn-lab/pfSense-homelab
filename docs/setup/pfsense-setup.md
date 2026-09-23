@@ -19,7 +19,7 @@ After configuring the pfSense WAN and LAN interfaces, I performed connectivity t
 
 ### WAN / Internet Connectivity
 
-I tested external connectivity from pfSense by pinging a public IP address: ping 8.8.8.8
+I tested external connectivity from pfSense by pinging a public IP address: 'ping 8.8.8.8'
 
 The test was successful:
 
@@ -31,7 +31,7 @@ This confirmed that the WAN interface was successfully connected to the Internet
 ![pfSense Internet Connectivity Test](../../images/phase1/Internet-Test.png)
 ### LAN Interface Verification
 
-I also tested the pfSense LAN interface by pinging its configured LAN address: ping 192.168.10.1
+I also tested the pfSense LAN interface by pinging its configured LAN address: 'ping 192.168.10.1'
 
 The test was successful:
 
