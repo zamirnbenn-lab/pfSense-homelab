@@ -17,16 +17,16 @@ After connecting the Windows 11 VM to the `LAB-LAN` segment, I verified that the
 
 The Windows 11 client received:
 
-- IP Address: `192.168.10.100`
-- Subnet Mask: `255.255.255.0`
-- Default Gateway: `192.168.10.1`
+- IP Address: 192.168.10.100
+- Subnet Mask: 255.255.255.0
+- Default Gateway: 192.168.10.1
 
 I then tested connectivity using:
 
-- `ping 192.168.10.1` to verify communication with the pfSense gateway
-- `ping 8.8.8.8` to verify Internet connectivity
-- `nslookup google.com` to verify DNS resolution
+- 'ping 192.168.10.1' to verify communication with the pfSense gateway
+- 'ping 8.8.8.8' to verify Internet connectivity
+- 'nslookup google.com' to verify DNS resolution
 
 All tests completed successfully with no packet loss.
 
-![Windows 11 Connectivity Test](../../images/phase1/windows11-connectivity-test.png)
+![Windows 11 Connectivity Test](../../images/phase1/Win11-ConnectivityTest.png)
