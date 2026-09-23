@@ -46,6 +46,10 @@ Linux administration, and security monitoring.
 - Network troubleshooting
 - Log analysis
 
+## Documentation
+- [pfSense Setup](docs/setup/pfsense-setup.md)
+- [Windows Server Setup](docs/setup/windows-server-setup.md) 
+
 ## Phase 1 - pfSense setup
 
 pfSense was configured as both the firewall and router for this homelab
