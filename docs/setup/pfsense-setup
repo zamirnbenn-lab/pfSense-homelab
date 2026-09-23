@@ -12,3 +12,23 @@
 - DHCP: Enabled
 - DHCP Pool - 192.168.10.100 - 192.168.10.199
 
+
+## Verification and Connectivity Testing
+
+After configuring the pfSense WAN and LAN interfaces, I performed connectivity tests to verify that the firewall was functioning correctly.
+
+### WAN / Internet Connectivity
+
+I tested external connectivity from pfSense by pinging a public IP address:
+
+`ping 8.8.8.8` 
+
+The test was successful:
+
+- 3 packets transmitted
+- 3 packets received
+- 0% packet loss
+
+This confirmed that the WAN interface was successfully connected to the Internet through VMware NAT.
+
+![pfSense Internet Connectivity Test](
