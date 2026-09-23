@@ -43,7 +43,7 @@ The test was successful:
 
 This confirmed that the LAN interface was active and working correctly. 
 
-![pfSense LAN Interface Test])(
+![pfSense LAN Interface Test])(images/phase1/LANConnectivity-Test.png)
 
 ### Current Results
 
