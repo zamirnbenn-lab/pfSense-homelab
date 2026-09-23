@@ -50,12 +50,12 @@ Linux administration, and security monitoring.
 - [pfSense Setup](docs/setup/pfsense-setup.md)
 - [Windows Server Setup](docs/setup/windows-server-setup.md) 
 
-## Phase 1 - pfSense setup
+## Phase 1 - pfSense Setup
 
-pfSense was configured as both the firewall and router for this homelab
+pfSense was configured as both the firewall and router for this homelab.
 
-- WAN: em0
+- WAN: em0 (DHCP via VMware NAT)
 - LAN: em1
-- LAN Subnet - 192.168.10.0/24
+- LAN Subnet: 192.168.10.0/24
 
-[View Detailed pfSense Configuration](docs/setup/pfsense-setup)
+[View Detailed pfSense Configuration](docs/setup/pfsense-setup.md)
