@@ -11,8 +11,8 @@ I decided to move the lab network to a dedicated VMware LAN Segment instead. Thi
 ## Resolution
 
 - Changed the pfSense LAN adapter from Host-only to a LAN Segment
-- Created a LAN Segment called `LAB-LAN`
-- Connected the Windows 11 VM to `LAB-LAN`
+- Created a LAN Segment called "LAB-LAN"
+- Connected the Windows 11 VM to "LAB-LAN"
 - Left the pfSense WAN adapter connected to VMware NAT
 - Restarted pfSense before starting the Windows 11 VM
 
