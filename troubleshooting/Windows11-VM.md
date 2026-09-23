@@ -6,6 +6,6 @@ While setting up the Windows 11 VM, it was not getting a working network connect
 
 ## Resolution
 
-I switched the pfSense LAN and Windows 11 VM over to a dedicated `LAB-LAN` segment while keeping the pfSense WAN connected through VMware NAT. After restarting pfSense and the Windows 11 VM, the client was able to connect successfully through pfSense.
+I switched the pfSense LAN and Windows 11 VM over to a dedicated LAB-LAN segment while keeping the pfSense WAN connected through VMware NAT. After restarting pfSense and the Windows 11 VM, the client was able to connect successfully through pfSense.
 
 This fixed the issue and gave me a cleaner isolated network for the lab.
