@@ -29,8 +29,7 @@ The test was successful:
 
 This confirmed that the WAN interface was successfully connected to the Internet through VMware NAT.
 
-[pfSense Internet Connectivity Test](images/phase1/ConnectTest.png)
-
+[pfSense Internet Connectivity Test](../../images/phase1/ConnectTest.png)
 ### LAN Interface Verification
 
 I also tested the pfSense LAN interface by pinging its configured LAN address: `ping 192.168.10.1`
