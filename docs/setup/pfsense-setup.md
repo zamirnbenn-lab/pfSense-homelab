@@ -25,6 +25,7 @@ The test was successful:
 
 - 3 packets transmitted, 3 packets received, 0% packet loss
 
+
 This confirmed that the WAN interface was successfully connected to the Internet through VMware NAT.
 
 ![pfSense Internet Connectivity Test](../../images/phase1/Internet-Test.png)
@@ -35,6 +36,7 @@ I also tested the pfSense LAN interface by pinging its configured LAN address: `
 The test was successful:
 
 - 3 packets transmitted, 3 packets received, 0% packet loss
+
 
 This confirmed that the LAN interface was active and working correctly. 
 
