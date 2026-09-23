@@ -13,7 +13,7 @@ Linux administration, and security monitoring.
 
 - VMware Workstation Pro
 - pfSense CE
-- Windows Server 2022
+- Windows Server 2025
 - Windows 11
 - Ubuntu Server
 - Kali Linux
@@ -30,21 +30,30 @@ Linux administration, and security monitoring.
 | pfSense LAN | 192.168.10.1 | Default Gateway |
 | Windows Server | 192.168.10.10 | AD/DNS Server |
 | Ubuntu Server | 192.168.10.20 | Linux Server |
-| Windows 11 | DHCP | Domain Client |
+| Windows 11 | 192.168.10.100 (DHCP) | Domain Client |
 
 ## Skills Demonstrated
 
-- Firewall configuration
-- NAT
+- pfSense firewall and routing
+- VMware Workstation
 - DHCP
-- DNS
-- Routing
-- VLAN segmentation
-- Active Directory
-- Group Policy
-- Linux administration
+- Static IP addressing
+- WAN and LAN configuration
+- Network segmentation using a dedicated LAN segment
+- Windows 11 client networking
+- Windows Server 2025 networking
+- Gateway connectivity testing
+- Internet connectivity testing
+- DNS resolution
 - Network troubleshooting
-- Log analysis
+
+## Planned Skills and Technologies
+
+As I continue building the lab, I plan to add:
+
+As I continue building the lab, I plan to add Active Directory, Group Policy, VLAN segmentation, Linux systems, security monitoring, and cloud networking.
+
+Future phases will also include Splunk, Kali Linux, firewall rule testing, inter-VLAN routing, and Azure networking/security concepts.
 
 ## Documentation
 - [pfSense Setup](docs/setup/pfSense.md)
