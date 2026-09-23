@@ -1,4 +1,4 @@
-# Windows Server Setup
+# Windows 11 VM Setup
 
 ## VM Configuration
 
