@@ -23,9 +23,7 @@ I tested external connectivity from pfSense by pinging a public IP address: `pin
 
 The test was successful:
 
-- 3 packets transmitted
-- 3 packets received
-- 0% packet loss
+- 3 packets transmitted, 3 packets received, 0% packet loss
 
 This confirmed that the WAN interface was successfully connected to the Internet through VMware NAT.
 
@@ -36,9 +34,7 @@ I also tested the pfSense LAN interface by pinging its configured LAN address: `
 
 The test was successful:
 
-- 3 packets transmitted
-- 3 packets received
-- 0% packet loss
+- 3 packets transmitted, 3 packets received, 0% packet loss
 
 This confirmed that the LAN interface was active and working correctly. 
 
