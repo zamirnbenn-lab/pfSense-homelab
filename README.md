@@ -25,12 +25,20 @@ Linux administration, and security monitoring.
 
 ## Network Addressing
 
-| Device | IP Address | Purpose |
-|---|---|---|
-| pfSense LAN | 192.168.10.1 | Default Gateway |
-| Windows Server | 192.168.10.10 | AD/DNS Server |
-| Ubuntu Server | 192.168.10.20 | Linux Server |
-| Windows 11 | 192.168.10.100 (DHCP) | Domain Client |
+## Network Addressing
+
+- **pfSense LAN:** 192.168.10.1
+  - Default gateway for the lab network
+
+- **Windows Server 2025:** 192.168.10.10
+  - Static IP
+  - Will be used for Active Directory and DNS
+
+- **Windows 11 Client:** 192.168.10.100 via DHCP
+  - Client machine connected to the LAB-LAN
+
+- **Ubuntu Server:** 192.168.10.20
+  - Planned Linux server
 
 ## Skills Demonstrated
 
