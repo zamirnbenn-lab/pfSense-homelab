@@ -1,0 +1,9 @@
+# Windows Server Setup
+
+## VM Configuration
+
+- OS: Windows Server 2019
+- CPU: 2 cores
+- RAM: 2 GB
+- Storage: 60 GB
+- Network Adapter: LAB-LAN / Host-only
