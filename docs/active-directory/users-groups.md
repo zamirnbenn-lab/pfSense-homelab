@@ -31,6 +31,21 @@ The screenshot below shows one of the security groups with its assigned users.
 
 ![Active Directory Security Group Members](../../images/phase2/ad-group-members.png)
 
-## Result
 
-At this point, the 'lab.local' domain has a basic user and group structure set up. This gives me a good starting point for adding shared resources, permissions, and Group Policy later in the lab.
+## Organizational Units
+
+After creating the users and security groups, I created Organizational Units for each department to keep the domain more organized.
+
+The OUs I created were:
+
+- IT
+- HR
+- Marketing
+
+I then moved each user into the OU that matched their department while keeping them in their assigned security group.
+
+This gives me a cleaner Active Directory structure and will make it easier to apply Group Policy to specific departments later.
+
+![Active Directory OU Structure](../../images/phase2/directoryOU.png)
+
+At this point, each user is both organized inside the correct department OU and still a member of the matching security group.
