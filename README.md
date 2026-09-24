@@ -91,3 +91,38 @@ After everything was connected, I tested both Windows machines to make sure they
 - DNS resolution is working
 
 [View Detailed pfSense Configuration](docs/setup/pfSense.md)
+**Phase 1 Status: Complete**
+
+<br><br>
+
+## Phase 2 - Active Directory and Domain Services
+
+For Phase 2, I started turning the Windows Server 2025 VM into the main server for the lab.
+
+I installed Active Directory Domain Services and DNS, promoted the server to a domain controller, and created the 'lab.local' domain.
+
+I then created users, security groups, and department-based Organizational Units for IT, HR, and Marketing. Each user was moved into the OU that matched their department while still being kept in the matching security group.
+
+[View Active Directory Users and Groups Documentation](docs/active-directory/users-groups.md)
+
+After Active Directory was set up, I changed the Windows 11 client to use '192.168.10.10' as its DNS server. I tested DNS using 'nslookup lab.local' and then joined the Windows 11 VM to the 'lab.local' domain.
+
+After restarting the client, I logged in using one of the Active Directory accounts and used "whoami" to confirm that domain authentication was working.
+
+[View Windows 11 Domain Join Documentation](docs/active-directory/domain-join.md)
+
+### Phase 2 Results
+
+- Windows Server 2025 was promoted to a domain controller
+- 'lab.local' domain was created
+- DNS is running through Windows Server 2025
+- Department-based OUs were created
+- Users and Global Security groups were created
+- Users were organized into the correct OUs and groups
+- Windows 11 was successfully joined to 'lab.local'wwww
+- Domain login was successfully tested
+- DNS resolution between the client and domain controller is working
+
+### Current Phase 2 Progress
+
+Phase 2 is still in progress. The next step is working with Group Policy and then using the security groups for shared folder permissions and access control.
