@@ -106,6 +106,7 @@ After everything was connected, I tested both Windows machines to make sure they
 - DNS resolution is working
 
 [View Detailed pfSense Configuration](docs/setup/pfSense.md)
+
 **Phase 1 Status: Complete**
 
 <br><br>
