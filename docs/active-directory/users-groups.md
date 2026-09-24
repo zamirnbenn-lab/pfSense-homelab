@@ -48,5 +48,3 @@ I then moved each user into the OU that matched their department while keeping t
 This gives me a cleaner Active Directory structure and will make it easier to apply Group Policy to specific departments later.
 
 ![Active Directory OU Structure](../../images/phase2/directoryOU.png)
-
-At this point, each user is both organized inside the correct department OU and still a member of the matching security group.
