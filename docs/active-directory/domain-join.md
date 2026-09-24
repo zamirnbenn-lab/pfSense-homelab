@@ -20,6 +20,3 @@ That confirmed the Windows 11 client was joined to 'lab.local' and the domain ac
 
 ![Domain Login Verification](../../images/phase2/whoami.png)
 
-## Result
-
-At this point, the Windows 11 VM can connect to the domain, resolve 'lab.local' through DNS, and log in using an Active Directory account.
