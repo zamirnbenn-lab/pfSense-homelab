@@ -40,20 +40,6 @@ Linux administration, and security monitoring.
 - **Ubuntu Server:** 192.168.10.20
   - Planned Linux server
 
-## Skills Demonstrated
-
-- pfSense firewall and routing
-- VMware Workstation
-- DHCP
-- Static IP addressing
-- WAN and LAN configuration
-- Network segmentation using a dedicated LAN segment
-- Windows 11 client networking
-- Windows Server 2025 networking
-- Gateway connectivity testing
-- Internet connectivity testing
-- DNS resolution
-- Network troubleshooting
 
 ## Planned Skills and Technologies
 
