@@ -62,9 +62,24 @@ As I continue building the lab, I plan to add Active Directory, Group Policy, VL
 Future phases will also include Splunk, Kali Linux, firewall rule testing, inter-VLAN routing, and Azure networking/security concepts.
 
 ## Documentation
+
+### Setup
+
 - [pfSense Setup](docs/setup/pfSense.md)
 - [Windows 11 Setup](docs/setup/Windows11Pro-VM.md)
-- [Windows Server Setup](docs/setup/Windows-Server2025.md)
+- [Windows Server 2025 Setup](docs/setup/Windows-Server2025.md)
+
+### Active Directory
+
+- [Users, Groups, and OUs](docs/active-directory/users-groups.md)
+- [Windows 11 Domain Join](docs/active-directory/domain-join.md)
+
+### Troubleshooting
+
+- [Windows 11 Network Connectivity Issue](troubleshooting/windows11-network.md)
+- [Domain Controller Promotion Issue](troubleshooting/domain-controller-promotion.md)
+
+<br><br>
 
 ## Phase 1 - Network Foundation
 
