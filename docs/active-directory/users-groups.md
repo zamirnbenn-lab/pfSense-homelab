@@ -32,6 +32,8 @@ The screenshot below shows one of the security groups with its assigned users.
 ![Active Directory Security Group Members](../../images/phase2/ad-group-members.png)
 
 
+
+
 ## Organizational Units
 
 After creating the users and security groups, I created Organizational Units for each department to keep the domain more organized.
