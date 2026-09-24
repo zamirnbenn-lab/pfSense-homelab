@@ -139,6 +139,4 @@ After restarting the client, I logged in using one of the Active Directory accou
 - Domain login was successfully tested
 - DNS resolution between the client and domain controller is working
 
-### Current Phase 2 Progress
-
-Phase 2 is still in progress. The next step is working with Group Policy and then using the security groups for shared folder permissions and access control.
+**Phase 1 Status: In Progress**
