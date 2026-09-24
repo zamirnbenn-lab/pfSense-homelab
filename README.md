@@ -139,4 +139,4 @@ After restarting the client, I logged in using one of the Active Directory accou
 - Domain login was successfully tested
 - DNS resolution between the client and domain controller is working
 
-**Phase 1 Status: In Progress**
+**Phase 2 Status: In Progress**
