@@ -31,8 +31,7 @@ The screenshot below shows one of the security groups with its assigned users.
 
 ![Active Directory Security Group Members](../../images/phase2/ad-group-members.png)
 
-
-
+<br><br>
 
 ## Organizational Units
 
