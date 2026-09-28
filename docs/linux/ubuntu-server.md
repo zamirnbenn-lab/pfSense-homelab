@@ -20,7 +20,7 @@ After the server was installed, I tested connectivity to the pfSense gateway and
 
 The server was able to reach '192.168.10.1', and 'lab.local' successfully resolved to the Windows Server at 192.168.10.10.
 
-![Ubuntu Network Connectivity](../../images/phase3/Ubunut-Net-Connectivety.png)
+![Ubuntu Network Connectivity](../../images/phase3/Ubuntu-Net-Connectivety.png)
 
 ## SSH Testing
 
