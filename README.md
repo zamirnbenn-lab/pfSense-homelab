@@ -145,3 +145,29 @@ I tested the permissions from the Windows 11 client and confirmed that users cou
 - Allowed and denied folder access successfully tested
 
 **Phase 2 Status: Complete**
+
+<br><br>
+
+## Phase 3 - Linux Server Integration
+
+For Phase 3, I plan to add an Ubuntu Server VM to the lab and connect it to the existing 'Lab-LAN' network.
+
+The main goal for this phase is to get more hands-on with Linux while keeping it connected to the same environment as pfSense, Windows Server, and the Windows 11 client.
+
+During this phase, I plan to work on:
+
+- Setting up Ubuntu Server
+- Configuring a static IP
+- Using SSH for remote access
+- Creating Linux users and groups
+- Working with file and folder permissions
+- Practicing basic Linux administration
+- Installing Apache or Nginx
+- Adding a DNS record through Windows Server
+- Testing connectivity between the Linux and Windows systems
+
+### Phase 3 Goal
+
+By the end of this phase, I want the Ubuntu Server fully connected to the lab, reachable through DNS, accessible through SSH, and running a basic web service.
+
+**Phase 3 Status: In-progress**
