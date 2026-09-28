@@ -41,7 +41,7 @@ Linux administration, and security monitoring.
   - Client machine connected to the LAB-LAN
 
 - **Ubuntu Server:** 192.168.10.20
-  - Planned Linux server
+  - Linux server
 
 
 ## Planned Skills and Technologies
