@@ -52,19 +52,20 @@ Future phases will also include Splunk, Kali Linux, firewall rule testing, inter
 ### Setup
 
 - [pfSense Setup](docs/setup/pfSense.md)
-- [Windows 11 Setup](docs/setup/Windows11Pro-VM.md)
+- [Windows 11 Pro Setup](docs/setup/Windows11Pro-VM.md)
 - [Windows Server 2025 Setup](docs/setup/Windows-Server2025.md)
 
 ### Active Directory
 
 - [Users, Groups, and OUs](docs/active-directory/users-groups.md)
 - [Windows 11 Domain Join](docs/active-directory/domain-join.md)
+- [Group Policy](docs/active-directory/group-policy.md)
+- [Shared Folder Permissions](docs/active-directory/shared-folder-permissions.md)
 
 ### Troubleshooting
 
 - [Windows 11 Network Connectivity Issue](troubleshooting/windows11-network.md)
 - [Domain Controller Promotion Issue](troubleshooting/domain-controller-promotion.md)
-
 <br><br>
 
 ## Phase 1 - Network Foundation
@@ -99,30 +100,48 @@ After everything was connected, I tested both Windows machines to make sure they
 
 ## Phase 2 - Active Directory and Domain Services
 
-For Phase 2, I started turning the Windows Server 2025 VM into the main server for the lab.
+For Phase 2, I focused on building out the Active Directory side of the lab using Windows Server 2025.
 
 I installed Active Directory Domain Services and DNS, promoted the server to a domain controller, and created the 'lab.local' domain.
 
-I then created users, security groups, and department-based Organizational Units for IT, HR, and Marketing. Each user was moved into the OU that matched their department while still being kept in the matching security group.
+I created users and Global Security groups for IT, HR, and Marketing. I also created Organizational Units for each department and moved the users into the OU that matched their department.
 
 [View Active Directory Users and Groups Documentation](docs/active-directory/users-groups.md)
 
-After Active Directory was set up, I changed the Windows 11 client to use '192.168.10.10' as its DNS server. I tested DNS using 'nslookup lab.local' and then joined the Windows 11 VM to the 'lab.local' domain.
+After Active Directory was set up, I changed the Windows 11 client to use '192.168.10.10' for DNS and joined it to the 'lab.local' domain.
 
-After restarting the client, I logged in using one of the Active Directory accounts and used "whoami" to confirm that domain authentication was working.
+I tested the domain connection using "nslookup lab.local" and logged into Windows 11 using one of the domain accounts. I also used "whoami" to confirm that the account was being authenticated through the domain.
 
 [View Windows 11 Domain Join Documentation](docs/active-directory/domain-join.md)
 
+### Group Policy
+
+I created and linked a Group Policy to the Marketing OU that blocked access to Control Panel and Windows Settings.
+
+After applying the policy, I logged into the Windows 11 client using a Marketing account and confirmed that Windows blocked access as expected.
+
+[View Group Policy Documentation](docs/active-directory/group-policy.md)
+
+### Shared Folder Permissions
+
+I created separate shared folders for IT, HR, and Marketing on Windows Server 2025 and used the department security groups to control access.
+
+I tested the permissions from the Windows 11 client and confirmed that users could access and modify files in their own department folder while being blocked from folders they did not have permission to use.
+
+[View Shared Folder Permissions Documentation](docs/active-directory/shared-folder-permissions.md)
+
 ### Phase 2 Results
 
-- Windows Server 2025 was promoted to a domain controller
-- 'lab.local' domain was created
-- DNS is running through Windows Server 2025
-- Department-based OUs were created
-- Users and Global Security groups were created
-- Users were organized into the correct OUs and groups
-- Windows 11 was successfully joined to 'lab.local'wwww
-- Domain login was successfully tested
-- DNS resolution between the client and domain controller is working
+- Windows Server 2025 promoted to a domain controller
+- 'lab.local' domain created
+- Active Directory Domain Services and DNS configured
+- Department-based OUs created for IT, HR, and Marketing
+- Users and Global Security groups created
+- Windows 11 successfully joined to 'lab.local'
+- Domain login and DNS resolution verified
+- Group Policy created, linked, and successfully tested
+- Department shared folders created
+- Share and NTFS permissions configured using security groups
+- Allowed and denied folder access successfully tested
 
-**Phase 2 Status: In Progress**
+**Phase 2 Status: Complete**
