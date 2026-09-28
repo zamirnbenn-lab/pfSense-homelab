@@ -46,9 +46,9 @@ Linux administration, and security monitoring.
 
 ## Planned Skills and Technologies
 
-As I continue building the lab, I plan to add Active Directory, Group Policy, VLAN segmentation, Linux systems, security monitoring, and cloud networking.
+As I continue building the lab, I plan to move more into network segmentation, security monitoring, and cloud networking.
 
-Future phases will also include Splunk, Kali Linux, firewall rule testing, inter-VLAN routing, and Azure networking/security concepts.
+Future phases will include VLAN segmentation, inter-VLAN routing, more advanced pfSense firewall rules, Splunk and centralized logging, security monitoring and log analysis, Kali Linux, network traffic analysis, Azure networking, Entra ID and RBAC, and other cloud security concepts.
 
 ## Documentation
 
