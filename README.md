@@ -66,6 +66,11 @@ Future phases will also include Splunk, Kali Linux, firewall rule testing, inter
 
 - [Windows 11 Network Connectivity Issue](troubleshooting/windows11-network.md)
 - [Domain Controller Promotion Issue](troubleshooting/domain-controller-promotion.md)
+
+### Linux
+
+- [Ubuntu Server Setup](docs/linux/ubuntu-server.md)
+
 <br><br>
 
 ## Phase 1 - Network Foundation
@@ -150,24 +155,16 @@ I tested the permissions from the Windows 11 client and confirmed that users cou
 
 ## Phase 3 - Linux Server Integration
 
-For Phase 3, I plan to add an Ubuntu Server VM to the lab and connect it to the existing 'Lab-LAN' network.
+For Phase 3, I started adding Linux to the lab by setting up an Ubuntu Server VM and connecting it to the existing 'LAB-LAN'.
 
-The main goal for this phase is to get more hands-on with Linux while keeping it connected to the same environment as pfSense, Windows Server, and the Windows 11 client.
+I gave the Ubuntu server a static IP of '192.168.10.20', with pfSense at '192.168.10.1' as the gateway and Windows Server 2025 at '192.168.10.10' handling DNS.
 
-During this phase, I plan to work on:
+After getting the server installed, I tested connectivity to the pfSense gateway and made sure Ubuntu could resolve 'lab.local' through the Windows Server DNS service.
 
-- Setting up Ubuntu Server
-- Configuring a static IP
-- Using SSH for remote access
-- Creating Linux users and groups
-- Working with file and folder permissions
-- Practicing basic Linux administration
-- Installing Apache or Nginx
-- Adding a DNS record through Windows Server
-- Testing connectivity between the Linux and Windows systems
+I also installed OpenSSH and tested remote access from the Windows 11 client using: "ssh zamir@192.168.10.20"
 
-### Phase 3 Goal
+[View Ubuntu Server Documentation](docs/linux/ubuntu-server.md)
 
-By the end of this phase, I want the Ubuntu Server fully connected to the lab, reachable through DNS, accessible through SSH, and running a basic web service.
+The next step is working with Linux users, groups, and file permissions before setting up a basic web server and adding a DNS record for the Ubuntu server.
 
-**Phase 3 Status: In-progress**
+**Phase 3 Status: In Progress**
