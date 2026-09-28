@@ -65,14 +65,15 @@ Future phases will include VLAN segmentation, inter-VLAN routing, more advanced 
 - [Group Policy](docs/active-directory/group-policy.md)
 - [Shared Folder Permissions](docs/active-directory/shared-folder-permissions.md)
 
+### Linux
+
+- [Ubuntu Server Setup](docs/linux/ubuntu-server.md)
+
 ### Troubleshooting
 
 - [Windows 11 Network Connectivity Issue](troubleshooting/windows11-network.md)
 - [Domain Controller Promotion Issue](troubleshooting/domain-controller-promotion.md)
 
-### Linux
-
-- [Ubuntu Server Setup](docs/linux/ubuntu-server.md)
 
 <br><br>
 
