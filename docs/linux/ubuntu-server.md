@@ -38,7 +38,7 @@ I created a second Linux user named 'alex' and a group named 'webadmins'.
 
 I then added both 'zamir' and 'alex' to the 'webadmins' group and checked the group memberships from the terminal.
 
-![Linux Users and Groups](../../images/phase3/WebAdminJoins.png)
+![Linux Users and Groups](../../images/phase2/WebAdminJoins.png)
 
 ## File Permissions
 
