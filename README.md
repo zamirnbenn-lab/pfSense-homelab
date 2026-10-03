@@ -77,7 +77,7 @@ Future phases will include VLAN segmentation, inter-VLAN routing, more advanced 
 - [Domain Controller Promotion Issue](troubleshooting/domain-controller-promotion.md)
 - [pfSense Interface Mapping Issue](troubleshooting/pfsense-interface-mapping.md)
 - [SERVER Interface ICMP Rule Issue](troubleshooting/server-interface-icmp-rule.md)
-
+- [Ubuntu DNS Resolution Issue](troubleshooting/ubuntu-dns-resolution.md)
 
 <br><br>
 
