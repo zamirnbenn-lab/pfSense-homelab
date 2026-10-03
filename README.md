@@ -27,28 +27,28 @@ Linux administration, and security monitoring.
 ![Beginning Network Topology](images/phase3/Current-Network-Topology-Phase3.png)
 
 
-
 ## Network Addressing
 
-- **pfSense LAN:** 192.168.10.1
+- pfSense LAN: 192.168.10.1
   - Default gateway for the lab network
 
-- **Windows Server 2025:** 192.168.10.10
+- Windows Server 2025: 192.168.10.10
   - Static IP
-  - Will be used for Active Directory and DNS
+  - Active Directory Domain Services and DNS
 
-- **Windows 11 Client:** 192.168.10.100 via DHCP
-  - Client machine connected to the LAB-LAN
+- Windows 11 Client: 192.168.10.100 via DHCP
+  - Connected to the 'LAB-LAN'
+  - Joined to the 'lab.local' domain
 
-- **Ubuntu Server:** 192.168.10.20
-  - Linux server
-
+- Ubuntu Server: 192.168.10.20
+  - Static IP
+  - OpenSSH and Nginx
 
 ## Planned Skills and Technologies
 
 As I continue building the lab, I plan to move more into network segmentation, security monitoring, and cloud networking.
 
-Future phases will include VLAN segmentation, inter-VLAN routing, more advanced pfSense firewall rules, Splunk and centralized logging, security monitoring and log analysis, Kali Linux, network traffic analysis, Azure networking, Entra ID and RBAC, and other cloud security concepts.
+Future phases will include VLAN segmentation, inter-VLAN routing, more advanced pfSense firewall rules, Splunk and centralized logging, security monitoring and log analysis, Kali Linux, and network traffic analysis.
 
 ## Documentation
 
@@ -159,16 +159,20 @@ I tested the permissions from the Windows 11 client and confirmed that users cou
 
 ## Phase 3 - Linux Server Integration
 
-For Phase 3, I started adding Linux to the lab by setting up an Ubuntu Server VM and connecting it to the existing 'LAB-LAN'.
+For Phase 3, I added an Ubuntu Server VM to the existing 'LAB-LAN' and gave it the static IP address '192.168.10.20'.
 
-I gave the Ubuntu server a static IP of '192.168.10.20', with pfSense at '192.168.10.1' as the gateway and Windows Server 2025 at '192.168.10.10' handling DNS.
+I configured the server to use pfSense at '192.168.10.1' as the gateway and Windows Server 2025 at '192.168.10.10' for DNS. After setting up the network, I tested connectivity and confirmed that Ubuntu could resolve the 'lab.local' domain.
 
-After getting the server installed, I tested connectivity to the pfSense gateway and made sure Ubuntu could resolve 'lab.local' through the Windows Server DNS service.
+I installed OpenSSH and tested remote access from the Windows 11 client using "ssh zamir@192.168.10.20".
 
-I also installed OpenSSH and tested remote access from the Windows 11 client using: "ssh zamir@192.168.10.20"
+I also worked with Linux users, groups, and file permissions by creating a second user named 'alex', a 'webadmins' group, and a shared directory at '/srv/linux-share'. I tested the folder using both accounts to make sure the group permissions were working correctly.
+
+After that, I installed Nginx and tested the web server locally and from the Windows 11 client.
+
+On Windows Server 2025, I created a DNS record for 'ubuntu-server.lab.local' that points to '192.168.10.20'. From Windows 11, I tested the new hostname using 'nslookup', 'ping', SSH, and a web browser.
+
+I was able to connect to the Ubuntu server and open the Nginx page using 'ubuntu-server.lab.local' instead of the IP address.
 
 [View Ubuntu Server Documentation](docs/linux/ubuntu-server.md)
 
-The next step is working with Linux users, groups, and file permissions before setting up a basic web server and adding a DNS record for the Ubuntu server.
-
-**Phase 3 Status: In Progress**
+Phase 3 Status: Complete
