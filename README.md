@@ -178,3 +178,8 @@ I was able to connect to the Ubuntu server and open the Nginx page using 'ubuntu
 [View Ubuntu Server Documentation](docs/linux/ubuntu-server.md)
 
 Phase 3 Status: Complete
+
+<br><br>
+
+## Phase 4 - VLAN Segmentation and Firewall Rules 
+**In progress** 
