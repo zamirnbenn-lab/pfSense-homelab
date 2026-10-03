@@ -183,5 +183,17 @@ Phase 3 Status: Complete
 
 <br><br>
 
-## Phase 4 - VLAN Segmentation and Firewall Rules 
-**In progress** 
+## Phase 4 - Network Segmentation and Firewall Rules
+
+For Phase 4, I started separating the lab into different networks instead of keeping every device on the same 'LAB-LAN'.
+
+I created separate VMware LAN Segments for the server, security, and guest networks and added additional network adapters to pfSense.
+
+The networks are currently set up as:
+
+- LAB-LAN - 192.168.10.0/24
+- SERVER-LAN - 192.168.20.0/24
+- SECURITY-LAN - 192.168.30.0/24
+- GUEST-LAN - 192.168.40.0/24
+
+**Phase 4 Status: In Progress**
