@@ -46,7 +46,7 @@ To practice Linux permissions, I created '/srv/linux-share' and gave the 'webadm
 
 I tested the permissions using both accounts. Both 'zamir' and 'alex' were able to create files inside the shared directory.
 
-![Linux File Permissions](../../images/phase3/LinuxFilePermissions.png)
+![Linux File Permissions](../../images/phase2/LinuxFilePermissions.png)
 
 ## Nginx Web Server
 
@@ -56,7 +56,7 @@ I first tested it locally using 'curl http://localhost'.
 
 The Ubuntu server returned the default Nginx page, confirming that the web server was working.
 
-![Nginx Test](../../images/phase3/NginxInstall.png)
+![Nginx Test](../../images/phase2/NginxInstall.png)
 
 I also opened the server from the Windows 11 client using '192.168.10.20' and confirmed that the Nginx page could be reached across the 'LAB-LAN'.
 
@@ -66,7 +66,7 @@ On Windows Server 2025, I created a new DNS Host (A) record for the Ubuntu serve
 
 The record points 'ubuntu-server.lab.local' to '192.168.10.20'.
 
-![Ubuntu DNS Record](../../images/phase3/UbuntuDNSRecord.png)
+![Ubuntu DNS Record](../../images/phase2/UbuntuDNSRecord.png)
 
 ## DNS and Hostname Testing
 
@@ -74,8 +74,8 @@ From the Windows 11 client, I used 'nslookup' and 'ping' to make sure the new ho
 
 I also connected to the Ubuntu server through SSH using the hostname instead of the IP address with 'ssh zamir@ubuntu-server.lab.local'.
 
-![Ubuntu DNS Test](../../images/phase3/UbuntuDNSTest.png)
+![Ubuntu DNS Test](../../images/phase2/UbuntuDNSTest.png)
 
 Finally, I opened 'http://ubuntu-server.lab.local' from the Windows 11 browser and successfully reached the Nginx web server.
 
-![Ubuntu DNS Browser Test](../../images/phase3/UbuntuDNSBrowserTest.png)
+![Ubuntu DNS Browser Test](../../images/phase2/UbuntuDNSBrowserTest.png)
