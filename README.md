@@ -76,6 +76,7 @@ Future phases will include VLAN segmentation, inter-VLAN routing, more advanced 
 - [Windows 11 Network Connectivity Issue](troubleshooting/windows11-network.md)
 - [Domain Controller Promotion Issue](troubleshooting/domain-controller-promotion.md)
 - [pfSense Interface Mapping Issue](troubleshooting/pfsense-interface-mapping.md)
+- [SERVER Interface ICMP Rule Issue](troubleshooting/server-interface-icmp-rule.md)
 
 
 <br><br>
