@@ -78,6 +78,7 @@ Future phases will include VLAN segmentation, inter-VLAN routing, more advanced 
 - [pfSense Interface Mapping Issue](troubleshooting/pfsense-interface-mapping.md)
 - [SERVER Interface ICMP Rule Issue](troubleshooting/server-interface-icmp-rule.md)
 - [Ubuntu DNS Resolution Issue](troubleshooting/ubuntu-dns-resolution.md)
+- [Windows 11 DNS Update Issue](troubleshooting/Windows11-DNS-Update.md)
 
 <br><br>
 
