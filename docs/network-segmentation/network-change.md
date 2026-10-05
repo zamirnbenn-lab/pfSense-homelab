@@ -36,7 +36,7 @@ I moved the Ubuntu Server from 'LAB-LAN' to the new 'SERVER-LAN' network.
 
 The server originally used '192.168.10.20', but I changed the static IP to '192.168.20.20' and updated the default gateway to '192.168.20.1'.
 
-![Ubuntu Network Change](../../images/phase4/Ubuntu-Network-Change(1).png)
+![Ubuntu Network Change](../../images/phase4/Ubuntu-Network-Change.png)
 
 ## SERVER Firewall Rules
 
