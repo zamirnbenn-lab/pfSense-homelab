@@ -71,6 +71,10 @@ Future phases will include VLAN segmentation, inter-VLAN routing, more advanced 
 - [Linux Users and File Permissions](docs/linux/users-permissions.md)
 - [Nginx and DNS Integration](docs/linux/nginx-dns.md)
 
+### Network Segmentation
+
+- [Network Segmentation and Server Network Changes](docs/network-segmentation/network-change.md)
+
 ### Troubleshooting
 
 - [Windows 11 Network Connectivity Issue](troubleshooting/windows11-network.md)
