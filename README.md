@@ -67,9 +67,7 @@ Future phases will include VLAN segmentation, inter-VLAN routing, more advanced 
 
 ### Linux
 
-- [Ubuntu Server Setup](docs/linux/ubuntu-server.md)
-- [Linux Users and File Permissions](docs/linux/users-permissions.md)
-- [Nginx and DNS Integration](docs/linux/nginx-dns.md)
+- [Ubuntu Server Setup & Integration](docs/linux/ubuntu-server.md)
 
 ### Network Segmentation
 
