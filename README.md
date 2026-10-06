@@ -52,9 +52,9 @@ Linux administration, and security monitoring.
 
 ## Planned Skills and Technologies
 
-As I continue building the lab, I plan to move more into network segmentation, security monitoring, and cloud networking.
+As I continue building the lab, I plan to focus more on firewall rules, security monitoring, and cloud networking.
 
-Future phases will include VLAN segmentation, inter-VLAN routing, more advanced pfSense firewall rules, Splunk and centralized logging, security monitoring and log analysis, Kali Linux, and network traffic analysis.
+Future phases will include more advanced pfSense firewall rules, testing and controlling traffic between networks, Splunk and centralized logging, security monitoring and log analysis, Kali Linux, network traffic analysis, and eventually working with 802.1Q VLANs.
 
 ## Documentation
 
