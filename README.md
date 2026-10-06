@@ -30,17 +30,23 @@ Linux administration, and security monitoring.
 ## Network Addressing
 
 - pfSense LAN: 192.168.10.1
-  - Default gateway for the lab network
+  - Default gateway for 'LAB-LAN'
 
-- Windows Server 2025: 192.168.10.10
+- pfSense SERVER: 192.168.20.1
+  - Default gateway for 'SERVER-LAN'
+
+- Windows 11 Client: 192.168.10.100 via DHCP
+  - Connected to 'LAB-LAN'
+  - Joined to the 'lab.local' domain
+  - Uses Windows Server 2025 at '192.168.20.10' for DNS
+
+- Windows Server 2025: 192.168.20.10
+  - Connected to 'SERVER-LAN'
   - Static IP
   - Active Directory Domain Services and DNS
 
-- Windows 11 Client: 192.168.10.100 via DHCP
-  - Connected to the 'LAB-LAN'
-  - Joined to the 'lab.local' domain
-
-- Ubuntu Server: 192.168.10.20
+- Ubuntu Server: 192.168.20.20
+  - Connected to 'SERVER-LAN'
   - Static IP
   - OpenSSH and Nginx
 
