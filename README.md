@@ -87,6 +87,7 @@ Future phases will include more advanced pfSense firewall rules, testing and con
 - [SERVER Interface ICMP Rule Issue](troubleshooting/server-interface-icmp-rule.md)
 - [Ubuntu DNS Resolution Issue](troubleshooting/ubuntu-dns-resolution.md)
 - [Windows 11 DNS Update Issue](troubleshooting/Windows11-DNS-Update.md)
+- [Windows Server Shared Folder Access Issue](troubleshooting/windows-server-share-access.md)
 
 <br><br>
 
