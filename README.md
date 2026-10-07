@@ -90,6 +90,7 @@ Future phases will include more advanced pfSense firewall rules, testing and con
 - [Ubuntu DNS Resolution Issue](troubleshooting/ubuntu-dns-resolution.md)
 - [Windows 11 DNS Update Issue](troubleshooting/Windows11-DNS-Update.md)
 - [Windows Server Shared Folder Access Issue](troubleshooting/windows-server-share-access.md)
+- [Windows Server DNS Forwarding Issue](troubleshooting/server-dns-forwarding.md)
 
 <br><br>
 
