@@ -35,6 +35,12 @@ Linux administration, and security monitoring.
 - pfSense SERVER: 192.168.20.1
   - Default gateway for 'SERVER-LAN'
 
+- pfSense SECURITY: 192.168.30.1
+  - Default gateway for 'SECURITY-LAN'
+
+- pfSense GUEST: 192.168.40.1
+  - Default gateway for 'GUEST-LAN'
+
 - Windows 11 Client: 192.168.10.100 via DHCP
   - Connected to 'LAB-LAN'
   - Joined to the 'lab.local' domain
@@ -49,6 +55,15 @@ Linux administration, and security monitoring.
   - Connected to 'SERVER-LAN'
   - Static IP
   - OpenSSH and Nginx
+
+- Kali Linux: 192.168.30.10
+  - Connected to 'SECURITY-LAN'
+  - Static IP
+  - Security testing client
+
+- Ubuntu Server (Splunk): 192.168.30.20
+  - Planned for 'SECURITY-LAN'
+  - Splunk Enterprise / SIEM
 
 ## Planned Skills and Technologies
 
