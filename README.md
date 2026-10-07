@@ -198,6 +198,7 @@ Phase 3 Status: Complete
 
 <br><br>
 
+
 ## Phase 4 - Network Segmentation and Firewall Rules
 
 For Phase 4, I started separating the lab into different networks instead of keeping every device on the same 'LAB-LAN'.
@@ -210,5 +211,19 @@ The networks are currently set up as:
 - SERVER-LAN - 192.168.20.0/24
 - SECURITY-LAN - 192.168.30.0/24
 - GUEST-LAN - 192.168.40.0/24
+
+I moved Windows Server 2025 and Ubuntu Server to 'SERVER-LAN' and updated their IP addresses, gateways, and DNS settings. After making the changes, I tested connectivity between Windows 11 and both servers to make sure Active Directory, DNS, shared folders, SSH, and Nginx were still working.
+
+I also installed Kali Linux on 'SECURITY-LAN' and configured firewall rules on the LAN, SERVER, and SECURITY interfaces.
+
+I tested the firewall rules by allowing access to services like DNS, SSH, and HTTPS while blocking unauthorized connections between the networks. I checked the pfSense firewall logs to confirm that the blocked traffic was being handled by the rules I created.
+
+[View Network Segmentation Documentation](docs/network-segmentation/network-change.md)
+
+[View LAN Firewall Rules](docs/network-segmentation/firewall-rules/lan.md)
+
+[View SERVER Firewall Rules](docs/network-segmentation/firewall-rules/server.md)
+
+[View SECURITY Firewall Rules](docs/network-segmentation/firewall-rules/security.md)
 
 **Phase 4 Status: In Progress**
