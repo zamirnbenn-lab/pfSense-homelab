@@ -22,7 +22,7 @@ The rules included:
 
 I also created an alias named 'INTERNAL_NETWORKS' containing the subnets used by the lab.
 
-![Internal Networks Alias](../../../images/phase4/Firewall-Aliases.png)
+![Internal Networks Alias](../../../images/phase4/Firewall-Aliases-Corrected.png)
 
 I used this alias to create a rule blocking traffic from 'SERVER-LAN' to the internal networks.
 
