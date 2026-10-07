@@ -24,7 +24,7 @@ Linux administration, and security monitoring.
 
 ## Current Network Topology
 
-![Beginning Network Topology](images/phase4/Phase4NetworkTopology.png)
+![Current Network Topology](images/phase4/NetworkTopology-Phase4.png)
 
 
 ## Network Addressing
