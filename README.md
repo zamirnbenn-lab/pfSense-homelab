@@ -63,6 +63,7 @@ Future phases will include more advanced pfSense firewall rules, testing and con
 - [pfSense Setup](docs/setup/pfSense.md)
 - [Windows 11 Pro Setup](docs/setup/Windows11Pro-VM.md)
 - [Windows Server 2025 Setup](docs/setup/Windows-Server2025.md)
+- [Kali Linux Setup](docs/setup/kali-linux-setup.md)
 
 ### Active Directory
 
@@ -81,9 +82,6 @@ Future phases will include more advanced pfSense firewall rules, testing and con
 - [LAN Firewall Rules](docs/network-segmentation/firewall-rules/lan.md)
 - [SERVER Firewall Rules](docs/network-segmentation/firewall-rules/server.md)
 - [SECURITY Firewall Rules](docs/network-segmentation/firewall-rules/security.md)
-
-### Security
-- [Kali Linux Setup](docs/security/kali-linux-setup.md)
 
 ### Troubleshooting
 
