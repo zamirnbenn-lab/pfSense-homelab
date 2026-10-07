@@ -17,9 +17,9 @@ Linux administration, and security monitoring.
 - Windows Server 2025
 - Windows 11
 - Ubuntu Server
+- Kali Linux
 
 ***Planned:***
-- Kali Linux
 - Splunk
 
 ## Current Network Topology
