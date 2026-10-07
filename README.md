@@ -79,6 +79,8 @@ Future phases will include more advanced pfSense firewall rules, testing and con
 
 - [Network Segmentation and Server Network Changes](docs/network-segmentation/network-change.md)
 - [LAN Firewall Rules](docs/network-segmentation/firewall-rules/lan.md)
+- [SERVER Firewall Rules](docs/network-segmentation/firewall-rules/server.md)
+
 ### Troubleshooting
 
 - [Windows 11 Network Connectivity Issue](troubleshooting/windows11-network.md)
