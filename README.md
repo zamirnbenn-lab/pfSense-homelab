@@ -81,6 +81,9 @@ Future phases will include more advanced pfSense firewall rules, testing and con
 - [LAN Firewall Rules](docs/network-segmentation/firewall-rules/lan.md)
 - [SERVER Firewall Rules](docs/network-segmentation/firewall-rules/server.md)
 
+### Security
+- [Kali Linux Setup](docs/security/kali-linux-setup.md)
+
 ### Troubleshooting
 
 - [Windows 11 Network Connectivity Issue](troubleshooting/windows11-network.md)
