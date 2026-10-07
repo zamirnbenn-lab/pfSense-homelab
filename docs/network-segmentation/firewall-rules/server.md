@@ -22,6 +22,8 @@ The rules included:
 
 I also created an alias named 'INTERNAL_NETWORKS' containing the subnets used by the lab.
 
+![Internal Networks Alias](../../../images/phase4/Firewall-Aliases.png)
+
 I used this alias to create a rule blocking traffic from 'SERVER-LAN' to the internal networks.
 
 After applying the block rule, I ran into an issue where Windows Server could no longer resolve external domains. I found that Windows Server needed to forward DNS requests to pfSense at '192.168.10.1'.
