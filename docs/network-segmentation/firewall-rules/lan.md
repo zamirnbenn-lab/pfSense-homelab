@@ -30,7 +30,7 @@ After configuring the allow rules, I added a block rule for traffic going to the
 
 I placed the block rule below the allow rules but above the default LAN allow rule so that other traffic going to the SERVER network would be blocked.
 
-![LAN Firewall Rules](../../../images/phase4/pfSense-FirewallLog-LAN-Test.png)
+![LAN Firewall Rules](../../../images/phase4/LAN-Firewall-Rules.png)
 
 ## Firewall Testing
 
@@ -52,6 +52,6 @@ I enabled logging on the block rule and tested the connection again from Windows
 
 The logs showed that pfSense blocked TCP traffic from '192.168.10.100' to '192.168.20.20' on port 443.
 
-![LAN Firewall Block Log](../../../images/phase4/pfSense-FirewallLog-LAN-Test(2).png)
+![LAN Firewall Block Log](../../../images/phase4/pfSense-FirewallLog-LAN-Test.png)
 
 This confirmed that Windows 11 could still access the services I allowed while other traffic to the SERVER network was being blocked.
