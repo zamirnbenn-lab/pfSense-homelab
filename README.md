@@ -80,6 +80,7 @@ Future phases will include more advanced pfSense firewall rules, testing and con
 - [Network Segmentation and Server Network Changes](docs/network-segmentation/network-change.md)
 - [LAN Firewall Rules](docs/network-segmentation/firewall-rules/lan.md)
 - [SERVER Firewall Rules](docs/network-segmentation/firewall-rules/server.md)
+- [SECURITY Firewall Rules](docs/network-segmentation/firewall-rules/security.md)
 
 ### Security
 - [Kali Linux Setup](docs/security/kali-linux-setup.md)
