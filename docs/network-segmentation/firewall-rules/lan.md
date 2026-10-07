@@ -30,7 +30,7 @@ After configuring the allow rules, I added a block rule for traffic going to the
 
 I placed the block rule below the allow rules but above the default LAN allow rule so that other traffic going to the SERVER network would be blocked.
 
-![LAN Firewall Rules](../../../images/phase4/LAN-Firewall-Rules.png)
+![LAN Firewall Rules](../../../images/phase4/pfSense-FirewallLog-LAN-Test.png)
 
 ## Firewall Testing
 
@@ -42,7 +42,7 @@ I then used 'Test-NetConnection' to test SSH on port 22 and HTTPS on port 443 to
 
 The SSH connection was successful, while the HTTPS connection timed out.
 
-![Windows 11 Firewall Testing](../../../images/phase4/Windows11-Firewall-Test(1).png)
+![Windows 11 Firewall Testing](../../../images/phase4/Windows11-Firewall-Test.png)
 
 ## Firewall Log Testing
 
