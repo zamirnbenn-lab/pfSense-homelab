@@ -99,6 +99,9 @@ Future phases will include Splunk and centralized logging, security monitoring a
 - [SERVER Firewall Rules](docs/network-segmentation/firewall-rules/server.md)
 - [SECURITY Firewall Rules](docs/network-segmentation/firewall-rules/security.md)
 
+### Security Monitoring 
+-[pfSense Logging](docs/security-monitoring/pfSense-logging.md)
+
 ### Troubleshooting
 
 - [Windows 11 Network Connectivity Issue](troubleshooting/windows11-network.md)
