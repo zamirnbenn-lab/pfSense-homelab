@@ -79,6 +79,7 @@ Future phases will include Splunk and centralized logging, security monitoring a
 - [Windows 11 Pro Setup](docs/setup/Windows11Pro-VM.md)
 - [Windows Server 2025 Setup](docs/setup/Windows-Server2025.md)
 - [Kali Linux Setup](docs/setup/kali-linux-setup.md)
+- [Splunk Enterprise Setup](docs/setup/splunk.md)
 
 ### Active Directory
 
