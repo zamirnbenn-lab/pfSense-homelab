@@ -98,7 +98,7 @@ Future phases will include Splunk and centralized logging, security monitoring a
 - [SECURITY Firewall Rules](docs/network-segmentation/firewall-rules/security.md)
 
 ### Security Monitoring 
--[pfSense Logging](docs/security-monitoring/pfSense-logging.md)
+- [pfSense Logging](docs/security-monitoring/pfSense-logging.md)
 
 ### Troubleshooting
 
