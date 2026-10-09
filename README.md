@@ -18,9 +18,7 @@ Linux administration, and security monitoring.
 - Windows 11
 - Ubuntu Server
 - Kali Linux
-
-***Planned:***
-- Splunk
+- Splunk Enterprise
 
 ## Current Network Topology
 
