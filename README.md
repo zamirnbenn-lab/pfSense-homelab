@@ -2,12 +2,9 @@
 
 ## Overview
 
-This project is a virtualized networking and security homelab built using
-VMware Workstation and pfSense.
+This project is a virtualized networking and security homelab built using VMware Workstation and pfSense.
 
-The purpose of the lab is to gain hands-on experience with routing,
-firewall configuration, VLAN segmentation, Windows Active Directory,
-Linux administration, and security monitoring.
+The purpose of the lab is to gain hands-on experience with routing, firewall configuration, network segmentation, Windows Active Directory, Linux administration, and security monitoring.
 
 ## Lab Environment
 
@@ -64,9 +61,7 @@ Linux administration, and security monitoring.
 
 ## Planned Skills and Technologies
 
-As I continue building the lab, I plan to focus more on security monitoring, centralized logging, and cloud networking.
-
-Future phases will include Splunk and centralized logging, security monitoring and log analysis, network traffic analysis, Kali Linux testing, additional pfSense firewall tuning, guest network isolation, and eventually working with 802.1Q VLANs and cloud networking/security concepts.
+As I continue building the lab, I plan to focus on centralized logging, security monitoring, testing how activity across the network appears in Splunk, and more firewall rules.
 
 ## Documentation
 
