@@ -11,7 +11,6 @@ Linux administration, and security monitoring.
 
 ## Lab Environment
 
-***Current:***
 - VMware Workstation Pro
 - pfSense CE
 - Windows Server 2025
