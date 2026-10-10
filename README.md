@@ -96,6 +96,7 @@ Future phases will include Splunk and centralized logging, security monitoring a
 - [LAN Firewall Rules](docs/network-segmentation/firewall-rules/lan.md)
 - [SERVER Firewall Rules](docs/network-segmentation/firewall-rules/server.md)
 - [SECURITY Firewall Rules](docs/network-segmentation/firewall-rules/security.md)
+- [GUEST Firewall Rules](docs/network-segmentation/firewall-rules/guest.md)
 
 ### Security Monitoring 
 - [pfSense Logging](docs/security-monitoring/pfSense-logging.md)
@@ -218,9 +219,9 @@ Phase 3 Status: Complete
 
 ## Phase 4 - Network Segmentation and Firewall Rules
 
-For Phase 4, I started separating the lab into different networks instead of keeping every device on the same 'LAB-LAN'.
+For Phase 4, I separated the lab into different networks instead of keeping every device on the same 'LAB-LAN'.
 
-I created separate VMware LAN Segments for the server, security, and guest networks and added additional network adapters to pfSense.
+I created separate VMware LAN Segments for the lab, server, security, and guest networks and added additional network adapters to pfSense.
 
 The networks are currently set up as:
 
@@ -229,11 +230,15 @@ The networks are currently set up as:
 - SECURITY-LAN - 192.168.30.0/24
 - GUEST-LAN - 192.168.40.0/24
 
-I moved Windows Server 2025 and Ubuntu Server to 'SERVER-LAN' and updated their IP addresses, gateways, and DNS settings. After making the changes, I tested connectivity between Windows 11 and both servers to make sure Active Directory, DNS, shared folders, SSH, and Nginx were still working.
+I moved Windows Server 2025 and Ubuntu Server to 'SERVER-LAN' and updated their IP addresses, gateways, and DNS settings.
 
-I also installed Kali Linux on 'SECURITY-LAN' and configured firewall rules on the LAN, SERVER, and SECURITY interfaces.
+I installed Kali Linux on 'SECURITY-LAN' and created firewall rules for the LAN, SERVER, SECURITY, and GUEST interfaces.
 
-I tested the firewall rules by allowing access to services like DNS, SSH, and HTTPS while blocking unauthorized connections between the networks. I checked the pfSense firewall logs to confirm that the blocked traffic was being handled by the rules I created.
+I configured the firewall rules to allow required services such as DNS, SSH, HTTP, HTTPS, and Active Directory traffic while blocking unauthorized communication between the networks.
+
+I tested the firewall rules from Windows 11, Ubuntu Server, Kali Linux, and the Windows 11 Guest VM. I also checked the pfSense firewall logs to confirm that blocked traffic was being handled by the rules I created.
+
+For the Guest network, I configured a Windows 11 VM at '192.168.40.100'. The Guest VM can access the internet but is blocked from accessing the internal LAB, SERVER, and SECURITY networks.
 
 [View Network Segmentation Documentation](docs/network-segmentation/network-change.md)
 
@@ -243,4 +248,26 @@ I tested the firewall rules by allowing access to services like DNS, SSH, and HT
 
 [View SECURITY Firewall Rules](docs/network-segmentation/firewall-rules/security.md)
 
-**Phase 4 Status: In Progress**
+[View GUEST Firewall Rules](docs/network-segmentation/firewall-rules/guest.md)
+
+**Phase 4 Status: Complete**
+
+## Phase 5 - Security Monitoring and Centralized Logging
+
+For Phase 5, I started adding centralized logging and security monitoring to the lab using Splunk Enterprise.
+
+I created a separate Ubuntu Server on 'SECURITY-LAN' at '192.168.30.20' and installed Splunk Enterprise. I configured the server with a static IP address, DNS through Windows Server 2025, SSH access, and automatic startup using systemd.
+
+I then configured Splunk to receive pfSense firewall and system logs over UDP port '5514'. I created a separate 'pfsense' index in Splunk to keep the firewall events organized.
+
+To test the setup, I generated blocked traffic from Kali Linux at '192.168.30.10' to Windows Server 2025 at '192.168.20.10'.
+
+The pfSense firewall blocked the traffic as expected and forwarded the event to Splunk. I searched the 'pfsense' index and confirmed that the blocked ICMP traffic from Kali was being recorded.
+
+This gave me a working centralized logging setup where network activity can be generated, blocked by pfSense, and reviewed through Splunk.
+
+[View Splunk Server Setup](docs/setup/splunk-server.md)
+
+[View pfSense Logging with Splunk](docs/security-monitoring/pfsense-logging.md)
+
+**Phase 5 Status: In Progress**
