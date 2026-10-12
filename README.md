@@ -262,6 +262,6 @@ This gave me a working centralized logging setup where network activity can be g
 
 [View Splunk Server Setup](docs/setup/splunk.md)
 
-[View pfSense Logging with Splunk](docs/security-monitoring/pfsense-logging.md)
+[View pfSense Logging with Splunk](docs/security-monitoring/pfSense-logging.md)
 
 **Phase 5 Status: In Progress**
