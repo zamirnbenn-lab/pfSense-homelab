@@ -260,7 +260,7 @@ The pfSense firewall blocked the traffic as expected and forwarded the event to 
 
 This gave me a working centralized logging setup where network activity can be generated, blocked by pfSense, and reviewed through Splunk.
 
-[View Splunk Server Setup](docs/setup/splunk-server.md)
+[View Splunk Server Setup](docs/setup/splunk.md)
 
 [View pfSense Logging with Splunk](docs/security-monitoring/pfsense-logging.md)
 
