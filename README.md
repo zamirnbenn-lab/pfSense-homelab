@@ -97,7 +97,7 @@ As I continue building the lab, I plan to focus on centralized logging, security
 
 ### Troubleshooting
 
-- [Windows 11 Network Connectivity Issue](troubleshooting/windows11-network.md)
+- [Windows 11 Network Connectivity Issue](troubleshooting/Windows11-VM.md)
 - [Domain Controller Promotion Issue](troubleshooting/domain-controller-promotion.md)
 - [pfSense Interface Mapping Issue](troubleshooting/pfsense-interface-mapping.md)
 - [SERVER Interface ICMP Rule Issue](troubleshooting/server-interface-icmp-rule.md)
