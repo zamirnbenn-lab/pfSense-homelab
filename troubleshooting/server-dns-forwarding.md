@@ -30,5 +30,3 @@ I placed the new rule above the internal network block rule and enabled the bloc
 After applying the changes, I tested DNS and internet connectivity from both Windows Server 2025 and Ubuntu Server.
 
 Windows Server was able to resolve external domains and connect to websites over HTTPS. Ubuntu was also able to access external websites and successfully completed a longer ping test with 0% packet loss.
-
-This allowed me to keep the internal network restrictions in place without blocking the DNS requests needed by the lab.
