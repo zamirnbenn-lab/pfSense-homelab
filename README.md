@@ -256,7 +256,7 @@ I also used Kali Linux to run an Nmap scan against Windows Server 2025. The traf
 
 To make the main events easier to review, I created a dashboard for blocked pfSense traffic, Windows failed logins, and Linux authentication events.
 
-[View Splunk Server Setup](docs/setup/splunk-server.md)
+[View Splunk Server Setup](docs/setup/splunk.md)
 
 [View Centralized Logging](docs/security-monitoring/centralized-logging.md)
 
