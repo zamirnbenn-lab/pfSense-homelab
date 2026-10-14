@@ -244,6 +244,8 @@ For the Guest network, I configured a Windows 11 VM at '192.168.40.100'. The Gue
 
 **Phase 4 Status: Complete**
 
+<br><br>
+
 ## Phase 5 - Security Monitoring and Centralized Logging
 
 For Phase 5, I added Splunk Enterprise to the lab and started using it as the main place to collect and review logs.
