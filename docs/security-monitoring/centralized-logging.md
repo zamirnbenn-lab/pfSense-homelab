@@ -8,12 +8,7 @@ The Splunk server is located on 'SECURITY-LAN' at '192.168.30.20'.
 
 ## Receiving Logs
 
-I set Splunk to listen on TCP port '9997' for Universal Forwarder traffic.
-
-
-Windows Server 2025, Windows 11, and Ubuntu Server all use this port to send their logs to Splunk.
-
-pfSense is handled a little differently. Its firewall and system logs are sent directly to Splunk through syslog on UDP port '5514'.
+Splunk was configured to receive Universal Forwarder traffic on TCP port 9997 and pfSense syslog traffic on UDP port 5514.
 
 To keep everything separated, I created three indexes:
 
