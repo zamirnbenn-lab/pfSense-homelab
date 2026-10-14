@@ -1,4 +1,4 @@
-# pfSense-homelab
+# pfSense Networking & Security Homelab
 
 ## Overview
 
@@ -59,10 +59,6 @@ The purpose of the lab is to gain hands-on experience with routing, firewall con
   - Planned for 'SECURITY-LAN'
   - Splunk Enterprise / SIEM
 
-## Planned Skills and Technologies
-
-As I continue building the lab, I plan to focus on centralized logging, security monitoring, testing how activity across the network appears in Splunk, and more firewall rules.
-
 ## Documentation
 
 ### Setup
@@ -92,8 +88,10 @@ As I continue building the lab, I plan to focus on centralized logging, security
 - [SECURITY Firewall Rules](docs/network-segmentation/firewall-rules/security.md)
 - [GUEST Firewall Rules](docs/network-segmentation/firewall-rules/guest.md)
 
-### Security Monitoring 
-- [pfSense Logging](docs/security-monitoring/pfSense-logging.md)
+### Security Monitoring
+
+- [Centralized Logging](docs/security-monitoring/centralized-logging.md)
+- [Security Monitoring and Testing](docs/security-monitoring/security-monitoring.md)
 
 ### Troubleshooting
 
@@ -248,20 +246,20 @@ For the Guest network, I configured a Windows 11 VM at '192.168.40.100'. The Gue
 
 ## Phase 5 - Security Monitoring and Centralized Logging
 
-For Phase 5, I started adding centralized logging and security monitoring to the lab using Splunk Enterprise.
+For Phase 5, I added Splunk Enterprise to the lab and started using it as the main place to collect and review logs.
 
-I created a separate Ubuntu Server on 'SECURITY-LAN' at '192.168.30.20' and installed Splunk Enterprise. I configured the server with a static IP address, DNS through Windows Server 2025, SSH access, and automatic startup using systemd.
+The Splunk server runs on 'SECURITY-LAN' at '192.168.30.20'. I configured pfSense, Windows Server 2025, Windows 11, and Ubuntu Server to send logs into separate 'pfsense', 'windows', and 'linux' indexes.
 
-I then configured Splunk to receive pfSense firewall and system logs over UDP port '5514'. I created a separate 'pfsense' index in Splunk to keep the firewall events organized.
+Once the logs were coming in, I used Splunk to look at blocked firewall traffic, failed Windows logins, and Linux authentication activity.
 
-To test the setup, I generated blocked traffic from Kali Linux at '192.168.30.10' to Windows Server 2025 at '192.168.20.10'.
+I also used Kali Linux to run an Nmap scan against Windows Server 2025. The traffic was blocked by pfSense and showed up in Splunk, which let me follow the activity from the system generating it to the firewall logs.
 
-The pfSense firewall blocked the traffic as expected and forwarded the event to Splunk. I searched the 'pfsense' index and confirmed that the blocked ICMP traffic from Kali was being recorded.
+To make the main events easier to review, I created a dashboard for blocked pfSense traffic, Windows failed logins, and Linux authentication events.
 
-This gave me a working centralized logging setup where network activity can be generated, blocked by pfSense, and reviewed through Splunk.
+[View Splunk Server Setup](docs/setup/splunk-server.md)
 
-[View Splunk Server Setup](docs/setup/splunk.md)
+[View Centralized Logging](docs/security-monitoring/centralized-logging.md)
 
-[View pfSense Logging with Splunk](docs/security-monitoring/pfSense-logging.md)
+[View Security Monitoring](docs/security-monitoring/security-monitoring.md)
 
-**Phase 5 Status: In Progress**
+**Phase 5 Status: Complete**
