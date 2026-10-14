@@ -10,7 +10,6 @@ The Splunk server is located on 'SECURITY-LAN' at '192.168.30.20'.
 
 I set Splunk to listen on TCP port '9997' for Universal Forwarder traffic.
 
-![Splunk Receiving Port](../../images/phase5/Splunk-Recieving-Port.png)
 
 Windows Server 2025, Windows 11, and Ubuntu Server all use this port to send their logs to Splunk.
 
